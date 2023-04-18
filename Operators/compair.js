@@ -1,0 +1,15 @@
+//Compairs;
+var x = 3 == 3;
+console.log(x);
+var y = 3 == "3";
+console.log(y);
+var z = 3 === "3";
+console.log(z);
+var k = 3 != 4;
+console.log(k);
+var o = 3 <= 6;
+console.log(o);
+var p = 3 >= 2;
+console.log(p);
+var g = 3 >= 9;
+console.log(g);
