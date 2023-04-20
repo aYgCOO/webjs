@@ -1,0 +1,17 @@
+//Lenght Function ;
+console.log("---Using Leangth Function---");
+var favshow = "Breaking Bad";
+console.log(favshow.length);
+console.log(favshow[0]);
+console.log(favshow[10]);
+console.log(favshow.length - 1);
+console.log(favshow.indexOf("Bad"));
+console.log(favshow[12 - 1]);
+//Slice Function;
+console.log("---Using Slice Function---");
+console.log(favshow.slice(5, 7));
+// Using Upper case Lower Case;
+console.log("---Using Upper case and Lower case---");
+var srk = "I am king Khan!";
+console.log(srk.toUpperCase());
+console.log(srk.toLocaleLowerCase());
