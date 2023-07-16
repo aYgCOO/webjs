@@ -204,5 +204,56 @@ console.log("End of ladder.");
 // console.log(myDate.getHours());
 
 // DOM Manupulation...
-let element = document.getElementById("click");
-console.log(element);
+// let element = document.getElementById("click");
+// console.log(element);
+
+// let elementClass = document.getElementsByClassName("container");
+// console.log(elementClass);
+// elementClass[0].style.background = "yellow";
+// elementClass[0].classList.add("bg-primary");
+// elementClass[0].classList.add("text-success");
+
+// console.log(element.innerHTML);
+// console.log(element.innerText);
+
+// tn = document.getElementsByTagName("div");
+// console.log(tn);
+// CElement = document.createElement("p");
+// CElement.innerText = "This is e created para!";
+// tn[0].appendChild(CElement);
+// CElement2 = document.createElement("b");
+// CElement2.innerText = "This is a created bold!";
+// tn[0].replaceChild(CElement2, CElement);
+//--> replace element and remove .
+
+// Selecting using Queary
+// sel = document.querySelector(".container");
+// console.log(sel);
+// sel = document.querySelectorAll(".contrainer");
+// console.log(sel);
+
+//Events in Javascripts.
+// function clicked() {
+//   console.log("This button was clicked.");
+// }
+// window.onload = function () {
+//   console.log("Document was loaded.");
+// };
+
+// firstContainer.addEventListener("click", function () {
+//   document.querySelectorAll(".container")[1].innerHTML =
+//     "<b> We have clicked<b>";
+//   console.log("Click on container!");
+// });
+// firstContainer.addEventListener("mouseover", function () {
+//   console.log("Mouse on Container");
+// });
+// firstContainer.addEventListener("mouseout", function () {
+//   console.log("Mouse out of Container!");
+// });
+// firstContainer.addEventListener("mouseup", function () {
+//   console.log("Mouse up when clicked on container");
+// });
+// firstContainer.addEventListener("mousedown", function () {
+//   console.log("Mouse down when clicked on container");
+// });
