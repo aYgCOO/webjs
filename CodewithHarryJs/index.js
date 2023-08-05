@@ -257,3 +257,40 @@ console.log("End of ladder.");
 // firstContainer.addEventListener("mousedown", function () {
 //   console.log("Mouse down when clicked on container");
 // });
+
+//ARow functions
+/* function sum(a, b) {
+  return a + b;
+}
+// sum = (a, b) => {
+//   return a + b;
+// };
+logKaro = () => {
+  document.querySelectorAll(".container")[1].innerHTML = "<b> Kick ASS </b>";
+  console.log("Loging done");
+};*/
+// setTimeout(logKaro, 5000);
+// setInterval(logKaro, 2000);
+// clr = setInterval(logKaro, 2000);
+// then use clearInterval(clr)
+// use clearInterval(clr)/clearTimeout(clr) to cancle setInterval/setTimeout
+
+// JavaScript localStorage
+// localStorage();
+// localStorage.setItem("name", "ayanabha");
+// localStorage;
+// localStorage.getItem("name");
+// localStorage.removeItem('name')
+// localStorage.clear()
+
+//JSON
+// obj = { name: "ayanabha", length: 1, a: { This: "That" } };
+// js = JSON.stringify(obj);
+// console.log(js);
+// // parsed = JSON.parsed(`{ name: "ayanabha", length: 1, a: { This: "That" } }`);
+// console.log(parsed);
+
+//Ecma Script
+// Template Literals - Backticks
+// a = 34;
+// console.log(`This is my ${a}"`);
