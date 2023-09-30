@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20%;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background: blue;
+  border: 4px outset rgb(1, 1, 165);
+  color: white;
+  font-size: 1.2rem;
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 5ms ease-in;
+}
+button:hover {
+  transform: translateY(-2%);
+  background-color: rgba(0, 0, 255, 0.808);
+  border: 4px outset rgba(1, 1, 165, 0.822);
+  color: white;
+}
