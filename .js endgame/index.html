@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+
+     .heading {
+          border-bottom: 2px solid black;
+     }
+
+     .dom-box {
+          border-bottom: 2px solid black;
+          padding: 10px;
+
+     }
+</style>
+
+<body>
+     <!-- DOM (Document Object Model) -->
+     <div class="heading">
+          <h1 id="heading text">JavaScript Endgame</h1>
+     </div>
+     <div class="dom-box">
+          <h3>DOM (Document Object Model)</h3>
+          <span id="test-text">This is a text</span>
+          <br>
+          <span id="change-text">Change the text.</span>
+          <button onclick="clickBtn()">Change</button>
+          <p>Hi my name is Ayanabha Chatterjee. <br>
+               <strong>Please double tap this button to get my LinkedIn Profile</strong> <br>
+               <strong id="display-link" style="visibility: hidden;"><a
+                         href="https://www.linkedin.com/in/ayanabha-chatterjee-104979256/" target="_blank">Ayanabha
+                         Chatterjee LinkedIn</a></strong>
+               <br>
+               <button ondblclick="dbClick()">Tap Double</button>
+          </p>
+          <strong><a href="public/domproject.html">Dom Project</a></strong>
+     </div>
+
+</body>
+<script src="js/DOM.js"></script>
+
+</html>
