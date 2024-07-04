@@ -53,6 +53,49 @@ function dbClick(){
 
 }
 
+//Change element by using query selector
+
+// In this case 'querySelector' choose the first element of the Dom tree.
+let aList = document.querySelector(".list");
+console.log(aList); 
+
+// In this case 'querySelectorAll' choose the all element of the Dom tree.
+let AllList = document.querySelectorAll(".list");
+console.log(AllList); // it's give an array with index
+
+// Let's access an element with the array index.
+
+var OneArr = AllList[2].innerHTML;
+console.log(OneArr);
+
+var changeThe5index = AllList[4].innerHTML="Customer Support";
+console.log(AllList[4], "Change to", changeThe5index);
+
+
+//Use EventListener
+let accessTheImage = document.getElementById("TheImage");
+let imageCaption = document.getElementById("caption");
+
+let check = 0;
+accessTheImage.addEventListener('mouseover', function(){
+       
+       if(check == 0){
+              accessTheImage.src="image/fuckyou.jpg";
+              imageCaption.innerHTML="Go fuck your self mf! Focus!!";
+              imageCaption.style.color="red";
+              check = 1;
+              
+       }else{
+              accessTheImage.src="image/xeimage.jpg"
+              imageCaption.innerHTML="Baby, hover the mouse in my boobies";
+              imageCaption.style.color="black";
+              check = 0;
+
+       }
+
+})
+
+
 
 
 

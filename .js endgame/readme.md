@@ -11,7 +11,7 @@ Before diving into React.js and Node.js, it's essential to have a solid understa
    - **Default Parameters**: Setting default values for function parameters.
    - **Enhanced Object Literals**: Shorthand property names and methods.
 
-### 2. **Understanding the DOM**
+### 2. **Understanding the DOM** ✅
    - **Selecting Elements**: Using methods like `querySelector` and `getElementById`.
    - **Manipulating Elements**: Changing text, HTML content, and attributes.
    - **Event Handling**: Adding and managing event listeners.
