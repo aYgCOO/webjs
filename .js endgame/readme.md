@@ -18,7 +18,7 @@ Before diving into React.js and Node.js, it's essential to have a solid understa
    - **Event Delegation**: Handling events efficiently with fewer listeners.
    - **Form Handling**: Managing form inputs and submissions.
 
-### 3. **JavaScript Closures and Scope**
+### 3. **JavaScript Closures and Scope** ✅
    - **Function Scope**: Understanding local vs. global scope.
    - **Block Scope**: Using `let` and `const` to declare variables.
    - **Closures**: Creating functions that retain access to their lexical scope.
