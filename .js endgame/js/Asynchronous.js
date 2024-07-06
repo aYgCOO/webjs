@@ -7,14 +7,18 @@ A good example is JavaScript setTimeout()
 // Callbacks
 //Functions passed as arguments to other functions to be executed later.
 
-function callBack(message){
-     console.log("This is a return message"+ message);
-}
-setTimeout(() => {
-     console.log("First Execution");
-     const later = "This will execute later";
-     callBack(later);
-     console.log("Last Execution");
-     
-}, 3000);
+/*2 types of callBack 1) setTimeout, 2) Promises 
+
+1) setTimeout: Call back Api low priority.
+2) Promises: Same concept it's also call back Api but high priority. 
+*/
+
+
+//setTimeout
+
+setTimeout(function(){
+     console.log("Hi Ayanabha Chatterjee");
+},2000)
+
+console.log(" Second");
 
