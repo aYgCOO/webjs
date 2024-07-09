@@ -17,8 +17,79 @@ A good example is JavaScript setTimeout()
 //setTimeout
 
 setTimeout(function(){
-     console.log("Hi Ayanabha Chatterjee");
-},2000)
+     console.log("First Execution");
+},5000)
 
-console.log(" Second");
+console.log(" Second Execution");
+
+//Promises
+
+ // Sync execution
+const promisesOne = new Promise(function(resolve, reject){
+     console.log("Sync,task execute successfully");
+     resolve(); 
+})
+promisesOne.then(
+     function(){
+          console.log("Sync, task promise consume successfully");
+     }
+)
+
+ // Async execution
+const promisesTask = new Promise(function(resolve, reject){
+     setTimeout(function(){
+         console.log("Async, task completed successfully");
+         resolve(); 
+   }, 5000)
+  
+ })
+ promisesTask.then(function(){
+     setTimeout(function(){
+         console.log("Async, promise consume successfully");
+     },2000)
+ })
+
+
+// Data retrieval 
+const dataRetrieval = new Promise(function(resolve, reject){
+     setTimeout(function(){
+          console.log("Data retrieve successfully");
+          resolve({
+               username: "ayanabha",
+               email: "demo3ayanabha@gmail.com",
+               MobileNo: 9875682351  
+          })
+     }, 6000)
+
+ })
+ dataRetrieval.then(function(userData){
+     console.log("Please wait.......")
+     setTimeout(function(){
+          console.log("Data fatching..... ");
+          setTimeout(function(){
+               console.log(userData);
+               console.log("Data retrieval promise consume successfully");
+               
+          }, 2000)
+     }, 10000)
+    
+ })
+
+
+
+
+// setInterval & clearInterval
+
+const ThisInterval = function(str){
+     console.log(str, "Current Date: ", Date.now());
+}
+
+clearM = setInterval(ThisInterval, 2000, "Hi mf");
+
+clearInterval(clearM);
+
+
+
+
+
 
