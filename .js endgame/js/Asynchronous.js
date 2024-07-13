@@ -110,48 +110,50 @@ FileAccess.then(function (fileDetails) {
      console.log(" {abcd.exe}:" + fileDetails.FileName);
      console.log("Access Grant ✅");       /*In JavaScript, promises allow chaining of then methods, which helps to handle asynchronous operations sequentially.                            
                                              Each then method returns a new promise, and the value returned from the callback function within a then method is                       
-                                             passed to the next then method in the chain.  */            
+                                             passed to the next then method in the chain.  */
 }).catch(function (fileAccessDenied) {
      setTimeout(function () {
           console.log("{ERROR}:" + fileAccessDenied.ERROR);
           console.log("Access Denied ❌")
 
      }, 0)
-}).finally(function(){
-     setTimeout(function(){
+}).finally(function () {
+     setTimeout(function () {
           console.log("Session End");
-     },8000)
+     }, 8000)
 })
 
 
 // Promises using Async & Await 
 
-const finalPromise = new Promise((resolve, reject)=>{
-
+const finalPromise = new Promise(function (resolve, reject) {
      setTimeout(() => {
-          var er = true;
-          if(!er){
+          let er = true;
+          if (!er) {
                console.log("SUCCESS");
-               resolve({Username: "Sristi Sarker", Gender: "Female" });
+               resolve({ Username: "Sristi Sarker", Gender: "Female" });
 
-          }else{
+          } else {
                console.log("ERROR");
                reject("Unknown");
           }
-          
+
      }, 2000);
 })
 
-async function AsyncPromiseConsumer(){
-     try{
-          console.log("Execution Successfully");
-          let response = await finalPromise
+async function AsyncPromiseConsumer() {
+     try {
+          let response = await finalPromise;
           console.log(response);
-     }catch(Unknown){
+     } catch (err) {
           console.log("Execution Reject");
-          console.log(Unknown);
-     } // Incomplete debugging 
-} 
+          console.log(err);
+     }
+}
+
+AsyncPromiseConsumer();
+
+
 // setInterval & clearInterval
 
 const ThisInterval = function (str) {
@@ -161,6 +163,40 @@ const ThisInterval = function (str) {
 clearM = setInterval(ThisInterval, 2000, "Hi mf");
 
 clearInterval(clearM);
+
+
+
+/* Fetch */
+/* New updated fetch() global function
+The global fetch() method starts the process of fetching a resource from the network, 
+ returning a promise that is fulfilled once the response is available. */
+
+let resource = {
+     Username: "Shivam",
+     Gender: "Unknown",
+     Type: "Cringe"
+}
+fetch(resource)
+fetch(resource, options);
+
+
+const myImage = document.querySelector("img-example");
+
+const myRequest = new Request("example-flowers.jpg");
+
+fetch(myRequest)
+     .then((response) => {
+          if (!response.ok) {
+               throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+
+          return response.blob();
+     })
+     .then((response) => {
+          myImage.src = URL.createObjectURL(response);
+     });
+
+
 
 
 
