@@ -1,4 +1,24 @@
-const paymentSystem = new Promise(function(resolve, reject){
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basic Payment Sys</title>
+</head>
+<style>
+     body{
+          background-color: black;
+          color: yellow;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+</style>
+<body>
+     <p>Currently, the payment system is exclusively available in console mode and is not accessible via the GUI.</p>
+     <h3>Press ctrl + shift + I</h3>
+
+
+     <script>
+     const paymentSystem = new Promise(function(resolve, reject){
      setTimeout(function(){
          console.log("Payment send....")
          resolve(
@@ -30,3 +50,6 @@ const paymentSystem = new Promise(function(resolve, reject){
      }, 5000)
      
  })
+     </script>
+</body>
+</html>
