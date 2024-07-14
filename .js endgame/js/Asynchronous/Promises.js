@@ -1,27 +1,3 @@
-/*
-Asynchronous : "I will finish later!".
-Functions running in parallel with other functions are called asynchronous
-A good example is JavaScript setTimeout()
-*/
-
-// Callbacks
-//Functions passed as arguments to other functions to be executed later.
-
-/*2 types of callBack 1) setTimeout, 2) Promises 
-
-1) setTimeout: Call back Api low priority.
-2) Promises: Same concept it's also call back Api but high priority. 
-*/
-
-
-/* setTimeout */
-
-setTimeout(function () {
-     console.log("First Execution");
-}, 5000)
-
-console.log(" Second Execution");
-
 /* Promises */
 
 // Promise resolve
@@ -122,79 +98,6 @@ FileAccess.then(function (fileDetails) {
           console.log("Session End");
      }, 8000)
 })
-
-
-// Promises using Async & Await 
-
-const finalPromise = new Promise(function (resolve, reject) {
-     setTimeout(() => {
-          let er = true;
-          if (!er) {
-               console.log("SUCCESS");
-               resolve({ Username: "Sristi Sarker", Gender: "Female" });
-
-          } else {
-               console.log("ERROR");
-               reject("Unknown");
-          }
-
-     }, 2000);
-})
-
-async function AsyncPromiseConsumer() {
-     try {
-          let response = await finalPromise;
-          console.log(response);
-     } catch (err) {
-          console.log("Execution Reject");
-          console.log(err);
-     }
-}
-
-AsyncPromiseConsumer();
-
-
-// setInterval & clearInterval
-
-const ThisInterval = function (str) {
-     console.log(str, "Current Date: ", Date.now());
-}
-
-clearM = setInterval(ThisInterval, 2000, "Hi mf");
-
-clearInterval(clearM);
-
-
-
-/* Fetch */
-/* New updated fetch() global function
-The global fetch() method starts the process of fetching a resource from the network, 
- returning a promise that is fulfilled once the response is available. */
-
-let resource = {
-     Username: "Shivam",
-     Gender: "Unknown",
-     Type: "Cringe"
-}
-fetch(resource)
-fetch(resource, options);
-
-
-const myImage = document.querySelector("img-example");
-
-const myRequest = new Request("example-flowers.jpg");
-
-fetch(myRequest)
-     .then((response) => {
-          if (!response.ok) {
-               throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-
-          return response.blob();
-     })
-     .then((response) => {
-          myImage.src = URL.createObjectURL(response);
-     });
 
 
 
